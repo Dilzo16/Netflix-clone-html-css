@@ -99,6 +99,9 @@ header select{
 .get-start div input{
     width: 75%;
     height: 100%;
+    font-size: 1rem;
+    padding-left: 1rem;
+    border: none;
     
 }
 .get-start div button{
@@ -113,27 +116,123 @@ header select{
 }
 
 .section1{
-    width: 100vw;
-    min-height: 70%;
-    background: #000;
-    color: white;
+    width: 100%;
+    height: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px;
-    border-top: 8px solid gray;
+    padding: 4rem 4rem;
+    background-color: black;
+    color: white;
+    border-top: 0.5rem solid gray;
 }
-.section1 img{
-    width: 400px;
 
+.section1 .enjoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.5rem;
 }
-.section1 video{
-    width: 293px;
-    position: absolute;
-    top: 62px;
-    left:53px;
-}
+
 .media-s1{
+    width: 100%;
+    height: 100%;
     position: relative;
 }
+
+.section1-img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.section1-img img{
+width: 100%;
+height: 100%;
+z-index: 10;
+position: relative;
+
+}
+
+.section1-video{
+    position:absolute;
+    width: 100%;
+    height: 55%;
+    top: 20%;
+    right: 0.5%;
+}
+
+.section1-video video{
+    width: 100%;
+    height: 100%;
+}
+
+.section-2{
+    width: 100%;
+    height: 75vh;
+    border-top: 8px solid gray;
+    display: flex;
+    flex-direction: row;
+    background-color:black;
+
+}
+.phone-anime{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.section-2 .section-2-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.download-box{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow:0px 0px 50px 1px #8888 ;
+    position: absolute;
+    bottom: 6rem;
+    left: 8.7rem;
+}
+
+.download-box .name {
+    color: white;
+    width: 100%;
+    margin-left: 1rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+.download-box .name span{
+    font-weight: 400;
+    color: blue;
+}
+.download-box .anime img{
+    width: 3rem;
+}
+
+.download-box .box-img{
+    width: 20%;
+    height: 100%;
+}
+.download-box .box-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.download-text{
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 8rem;
+    font-size: 2rem;
+}
+
