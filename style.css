@@ -236,3 +236,132 @@ position: relative;
     font-size: 2rem;
 }
 
+.section-3{
+    font-size: 2rem;
+    width: 100%;
+    height: 40vh;
+    border-top: 8px solid gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 4rem;
+    background-color: black;
+    color: white;
+}
+
+.section-4{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 4rem;
+    background-color: black;
+    border-top: 8px solid gray;
+}
+.kid-img{
+    width: 100%;
+    height: 100%;
+}
+.kid-img img{
+    width: 100%;
+    height: 90%;
+}
+
+.kid-text{
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-left: 1rem;
+}
+
+.section-5{
+    padding: 70px 30px;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+    border-top: 8px solid gray;
+    text-align: center;
+}
+
+.section-5 h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+.section-5 .questions{
+
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.65rem;
+}
+.question{
+    background-color: #303030;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 1rem;
+}
+
+.question .header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 30px;
+cursor: pointer;
+}
+.question .content{
+    padding: 20px 30px;
+    border-top: 1px solid #000;
+    display: none;
+}
+
+.expand-icon{
+    font-size: 20px;
+}
+
+.expanded .content{
+    display: block;
+}
+
+.end-getstart{
+    margin:auto;
+    margin-top:2rem;
+    width: 50%;
+}
+
+.footer{
+    border-top: 8px solid gray;
+    width: 100%;
+    height: 50vh;
+    color: gray;
+    background-color: #000;
+}
+
+.grid-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+}
+
+.grid-container a{
+    text-decoration: none;
+    color: gray;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.grid-container a:first-child{
+    font-size: 14px;
+}
