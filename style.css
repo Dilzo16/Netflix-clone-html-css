@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 body{
+    overflow-x: hidden;
     font-family: Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }
 .main{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -49,20 +50,17 @@ header select{
     border-radius: 3px;
 }
 .middle{
-    width: 50%;
+    width: 45rem;
     height: 60%;
     /* background: #e50914; */
-    position: absolute;
-    top: 30%;
-    left: 25%;
+    margin: 0 auto;
+    margin-top: 10%;
     color: white;
+    font-size: 2.3rem;
 }
 
 .middle .info{
     text-align: center;
-}
-.middle h1{
-    font-size: 3.5rem;
 }
 .middle p{
     padding-top: 1rem;
@@ -72,11 +70,14 @@ header select{
 .middle .get-start{
     display: flex;
     flex-direction: column;
-}
-
-.get-start{
     width: 100%;
     height: 10rem;
+}
+
+.getstart{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 }
 
 .get-start p{
@@ -90,22 +91,21 @@ header select{
     display: flex;
     flex-direction: row;
     width: 100%;    
-    height: 4rem;
-    background-color: rgb(63, 235, 0);
+    height: 14rem;
     
     
 }
 
 .get-start div input{
     width: 75%;
-    height: 100%;
+    height: 3.5rem;
     font-size: 1rem;
     padding-left: 1rem;
     border: none;
     
 }
 .get-start div button{
-    height: 100%;
+    height: 3.5rem;
     width: 25%;
     background: #e50914;
     text-align: left;
@@ -130,7 +130,7 @@ header select{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .media-s1{
@@ -140,7 +140,12 @@ header select{
 }
 
 .section1-img{
-    width: 100%;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     height: 100%;
     
     
@@ -158,7 +163,7 @@ position: relative;
     width: 100%;
     height: 55%;
     top: 20%;
-    right: 0.5%;
+    left: 10%;
 }
 
 .section1-video video{
@@ -182,12 +187,14 @@ position: relative;
 }
 .section-2 .section-2-img{
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
-
+.section-2 .section-2-img img{
+    width: 100%;
+}
 .download-box{
-    width: 350px;
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -197,8 +204,8 @@ position: relative;
     border-radius: 10px;
     box-shadow:0px 0px 50px 1px #8888 ;
     position: absolute;
-    bottom: 6rem;
-    left: 8.7rem;
+    bottom: 11rem;
+    left: 6.5rem;
 }
 
 .download-box .name {
@@ -233,11 +240,12 @@ position: relative;
     width: 100%;
     height: 100%;
     padding: 8rem;
+    margin-left: 3rem;
     font-size: 2rem;
 }
 
 .section-3{
-    font-size: 2rem;
+    font-size: 1.2rem;
     width: 100%;
     height: 40vh;
     border-top: 8px solid gray;
@@ -255,7 +263,7 @@ position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 4rem;
+    padding: 8rem;
     background-color: black;
     border-top: 8px solid gray;
 }
@@ -264,22 +272,26 @@ position: relative;
     height: 100%;
 }
 .kid-img img{
-    width: 100%;
+    width: 80%;
     height: 90%;
 }
 
 .kid-text{
     width: 100%;
-    font-size: 2rem;
+    font-size:1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
-    margin-left: 1rem;
+    margin-left: 3rem;
+}
+
+.kid-text p{
+    font-size: 20px;
 }
 
 .section-5{
-    padding: 70px 30px;
+    padding: 4rem 30px;
     color: white;
     margin: 0 auto;
     display: flex;
@@ -288,12 +300,13 @@ position: relative;
     background-color: #000;
     border-top: 8px solid gray;
     text-align: center;
+
 }
 
 .section-5 h1{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -301,23 +314,27 @@ position: relative;
 
     width: 60%;
     margin: 0 auto;
-    font-size: 1.65rem;
+    
 }
 .question{
     background-color: #303030;
     width: 100%;
-    height: 10%;
-    margin-bottom: 1rem;
+    height: 6%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .question .header{
 display: flex;
+height: 3rem;
 align-items: center;
 justify-content: space-between;
-padding: 20px 30px;
+padding: 15px 30px;
 cursor: pointer;
 }
 .question .content{
+    text-align: left;
     padding: 20px 30px;
     border-top: 1px solid #000;
     display: none;
@@ -335,24 +352,34 @@ cursor: pointer;
     margin:auto;
     margin-top:2rem;
     width: 50%;
+    height: 8rem;
 }
 
 .footer{
+    padding: 4rem;
     border-top: 8px solid gray;
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     color: gray;
     background-color: #000;
+}
+.outer{
+text-decoration: none;
+color: gray;
+width: 80%;
+display: block;
+margin: auto;
+
 }
 
 .grid-container{
     width: 80%;
     margin: auto;
-    padding-top: 3rem;
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(5,1fr);
-    gap: 10px;
+    gap: 1rem;
 }
 
 .grid-container a{
@@ -362,6 +389,121 @@ cursor: pointer;
     font-size: 12px;
 }
 
-.grid-container a:first-child{
-    font-size: 14px;
+
+
+@media screen and (max-width:1200px) {
+    .middle .get-start{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .get-start div{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .get-start div input{
+        width: 100%;
+        height: 3.5rem;
+        font-size: 1rem;
+        padding-left: 1rem;
+        border: none;
+        border-radius: 2px;
+    }
+    .get-start div button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        height: 2.5rem;
+        width: 25%;
+        background: #e50914;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 500;
+        border: none;
+        color: white;
+        border-radius: 2px;
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+    .section1-img{
+        margin: auto;
+        padding: 0;
+        background-color: #e50914;
+    }
+    .section1-video{
+        position:absolute;
+        width: 100%;
+        height: 55%;
+        top: 20.5%;
+        left:-0.6%;
+    }
+    .section-2{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 90vh;
+        margin: auto;
+    }
+    .section-2 p{
+        font-size: 20px;
+    }
+    .download-text{
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 3.4rem;
+        padding-bottom: 0;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    .phone-anime{
+        margin: auto;
+        
+        display: flex;
+        justify-content: center;
+    }
+    .download-box{
+        position: absolute;
+        bottom: 5rem;
+        left: 12.5rem;
+    }
+    .section-3{
+        margin: auto;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .section-4{
+        display: flex;
+        flex-direction:column-reverse;
+        height: 90vh;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .section-5 .questions{
+        width: 85%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+    .end-getstart{
+        margin:auto;
+        margin-top:2rem;
+        width: 70%;
+    }
+    .grid-container{
+        gap: 2px;
+        width: 95%;
+        gap: 1rem;
+    }
+    .outer{
+        width: 95%;
+    }
 }
